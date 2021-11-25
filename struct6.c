@@ -21,7 +21,7 @@ int main()
     for (int i = 0; i < num; i++)
     {
         float sum = 0;
-        printf("\nEmployee %d:\nName: ", i);
+        printf("\nEmployee %d:\nName: ", i+1);
         scanf("%s", employee[i].name);
         printf("Surname: ");
         scanf("%s", employee[i].surname);
@@ -35,10 +35,10 @@ int main()
         slry[i] = (employee[i].perday) * (employee[i].days);
     }
 
-    printf("\n\n#\tName\t\t Surname\t Position\t\t Salary\t\t Bonus\t\t Total\n\n");
+    printf("\n\n#\tName\t\t Surname\t Position\t Salary\t\t Bonus\t\t Total\n\n");
     for (int i = 0; i < num; i++)
     {
-        printf("%d\t%s\t\t %s\t\t %s\t\t $%.0f\t\t $%.0f\t\t $%.0f\n", i, employee[i].name, employee[i].surname, employee[i].position, slry[i], slry[i] / 10, slry[i] * 1.1);
+        printf("%d\t%s\t\t %s\t\t %s\t\t $%.0f\t\t $%.0f\t\t $%.0f\n", i+1, employee[i].name, employee[i].surname, employee[i].position, slry[i], slry[i] / 10, slry[i] * 1.1);
     }
 
     return 0;
