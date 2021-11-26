@@ -13,7 +13,7 @@ int main()
 {
     char option, price, color[10];
     int mod, cam, cheap = 2000, expensive = 0;
-    struct cellphone choice[5];
+    //struct cellphone choice[5];
 
     choice[0].rcamnum = 3, choice[0].price = 1099, choice[0].ID = 1;
     strcpy(choice[0].color, "Silver");
